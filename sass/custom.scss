@@ -1,0 +1,67 @@
+//custom variables
+
+$theme-colors: (
+	"primary": #a4b6a7,
+	"secondary": #D3DCD5,
+	"body-bg": #F7F9F2,
+	"body-color": #1E1E1E,
+);
+
+$custom-colors: (
+  "dark-accent": #56675C,
+  "brown-accent": #83786D
+);
+
+$position-values: (
+	"25": 25%,
+	"45": 45%,
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+$primary: #a4b6a7;
+$secondary: #D3DCD5;
+$body-bg: #F7F9F2;
+$body-color: #1E1E1E;
+
+$noticia: 'Noticia Text', serif;
+$merriweather: 'Merriweather', serif;
+$noto: 'Noto Serif', serif;
+
+//styles
+.noticia-font {
+	font-family: $noticia;
+}
+
+.noticia-font-bold {
+	font-family: $noticia;
+	font-weight: bold;
+}
+
+.merriweather-font {
+	font-family: $merriweather;
+}
+
+.merriweather-font-bi {
+	font-family: $merriweather;
+	font-weight: 900;
+	font-style: italic;
+}
+
+.notosans-font-i {
+	font-family: $noto;
+	font-style: italic;
+}
+
+// .active {
+// 	background-color: $primary;
+// 	color: white;
+// }
+
+
+//import bootstrap
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital@1&display=swap');
+@import '../node_modules/bootstrap/scss/bootstrap';
+@import '~mdb-ui-kit/css/mdb.min.css';
