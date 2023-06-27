@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-		<!-- <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet"/> -->
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.2.0/mdb.min.css" rel="stylesheet"/>
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link rel="stylesheet" href="sass/custom.css">
@@ -17,8 +17,9 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 	</head>
 
+	<body>
 		<div class="sticky-top bg-body-bg">
-			<nav class="navbar navbar-expand-lg navbar-dark-custom">
+			<nav class="navbar navbar-expand-lg navbar-dark-custom" style="box-shadow: none;">
 			  <div class="container-fluid">
 			  	<a class="h2 d-none d-xxl-flex text-body-color noticia-font" style="text-decoration: none; position: absolute; left: 15%;" href="./">salem paige</a>
 			  	<a class="h2 d-none d-lg-flex d-xxl-none text-body-color noticia-font" style="text-decoration: none; position: absolute; left: 5%;" href="./">salem paige</a>
@@ -53,66 +54,73 @@
 			</div>
 		</div>
 
-		<h1 class="display-5 noticia-font-bold text-center text-dark-accent mt-5" style="font-weight: bold; letter-spacing: 0.8rem;">portfolio</h1>
+		<h1 class="display-5 noticia-font-bold text-center text-dark-accent my-5" style="font-weight: bold; letter-spacing: 0.8rem;">portfolio</h1>
 
-		<div class="container-fluid mt-5" id="scrollTrigger">
-			<div class="col-xxl-5 col-lg-8 mx-auto">
-				<div class="row">
-					<div class="col-sm-4 mx-auto me-sm-2 mb-5">
-						<div class="mx-auto bg-primary border border-3 border-secondary" style="position: relative; width: 12rem; height: 12rem; margin: 0 3rem 0 3rem;">
-							<a href="writing">
-						  	<div class="bg-secondary border border-3 border-primary text-black" style="position: absolute; top: 1.2rem; left: 1.2rem; width: 12rem; height: 12rem;">
-						  		<div class="p-4 text-center">
-										<div class="mt-3">
-										<h3 class="noticia-font">writing</h3>
-						  			<p class="noticia-font">
-						  				poems, essays, and articles
-						  			</p></div>
-						  		</div>
-						  	</div>
-						  </a>
-						</div>
+		<div class="col-xxxl-3 col-xxl-5 col-lg-8 mx-auto" style="height: 42vh; width: 70vh;">
+			<div class="row" style="margin-bottom: 6vh;">
+				<div class="col-lg">
+					<div class="ms-auto border border-5 border-dark-accent bg-image" style="height: 18vh; width: 20vh; margin-right: 2vh;">
+						<img src="content/portfolio/writing.jpg" class="img-fluid" style="object-fit: cover; min-width: 100%; min-height: 100%; opacity: 30%;">
+						<a id="hover" href="writing">
+					    <div class="mask text-black noticia-font-bold" style="background-color: rgba(86, 103, 92, 0.15)">
+					    	<div class="d-flex justify-content-center align-items-center h-100">
+					    		<div class="col mx-5">
+						    		<h2>writing</h2>
+	  								<p class="mb-0">
+	  									<small>poems, essays, and articles</small>
+	  								</p>
+	  							</div>
+								</div>
+					    </div>
+					  </a>
 					</div>
-					<div class="col-sm-4 mx-auto ms-sm-2 mb-5">
-						<div class="mx-auto bg-primary border border-3 border-secondary" style="position: relative; width: 12rem; height: 12rem; margin: 0 3rem 0 3rem;">
-							<a href="design">
-						  	<div class="bg-secondary border border-3 border-primary text-black" style="position: absolute; top: 1.2rem; left: 1.2rem; width: 12rem; height: 12rem;">
-						  		<div class="p-4 text-center">
-										<div class="mt-3">
-										<h3 class="noticia-font">design</h3>
-						  			<p class="noticia-font">
-						  				websites, books, digital magazines
-						  			</p></div>
-						  		</div>
-						  	</div>
-						  </a>
-						</div>
-					</div>
-<!-- 					<div class="col-sm mx-auto ms-sm-2 mb-5">
-						<div class="mx-auto bg-primary border border-3 border-secondary" style="position: relative; width: 12rem; height: 12rem; margin: 0 3rem 0 3rem;">
-							<a href="photography">
-						  	<div class="bg-secondary border border-3 border-primary text-black" style="position: absolute; top: 1.2rem; left: 1.2rem; width: 12rem; height: 12rem;">
-						  		<div class="p-4 text-center">
-										<div class="mt-3">
-										<h4 class="noticia-font">photography</h4>
-						  			<p class="noticia-font">
-						  				in front of and behind the lens
-						  			</p></div>
-						  		</div>
-						  	</div>
-						  </a>
-						</div>
-					</div> -->
 				</div>
-
-				<div class="col-sm-12 d-none d-sm-block" style="height:2vw;"></div>
-
-				<div class="row">
+				<div class="col-lg">
+					<div class="me-auto border border-5 border-dark-accent bg-image" style="height: 18vh; width: 20vh; margin-left: 2vh;">
+						<img src="content/portfolio/design.jpg" class="img-fluid" style="object-fit: cover; min-width: 100%; min-height: 100%; opacity: 30%;">
+						<a id="hover" href="design">
+					    <div class="mask text-black noticia-font-bold" style="background-color: rgba(86, 103, 92, 0.15)">
+					    	<div class="d-flex justify-content-center align-items-center h-100">
+					    		<div class="col" style="margin-left: 4rem; margin-right: 4rem">
+						    		<h2>design</h2>
+	  								<p class="mb-0">
+	  									<small>websites, books, digital magazines</small>
+	  								</p>
+	  							</div>
+								</div>
+					    </div>
+					  </a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-lg">
+					<div class="mx-auto border border-5 border-dark-accent bg-image" style="height: 18vh; width: 20vh;">
+						<img src="content/portfolio/photography.jpg" class="img-fluid" style="object-fit: cover; min-width: 100%; min-height: 100%; opacity: 30%;">
+						<a id="hover" href="photography">
+					    <div class="mask text-black noticia-font-bold" style="background-color: rgba(86, 103, 92, 0.15)">
+					    	<div class="d-flex justify-content-center align-items-center h-100">
+					    		<div class="col mx-5">
+						    		<h2>photo-graphy</h2>
+										<p class="mb-0">
+											<small>in front of and behind the lens</small>
+										</p>
+									</div>
+								</div>
+					    </div>
+					  </a>
+					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="col-xs-12 d-none d-lg-block" style="height:150px;"></div>
+		<div class="col-xs-12 d-none d-lg-block" style="height:100px;"></div>
+
+		<div class="col-xxl-4 col-md-10 mx-auto mt-5">
+			<div class="bg-primary my-2 mx-auto" style="padding: .1rem;"></div>
+		</div>
+
+		<!-- <div class="col-xs-12 d-none d-lg-block" style="height:150px;"></div> -->
 
 		<div class="d-flex flex-row justify-content-center mt-5 mb-1">
 			<a class="pe-2" href="https://instagram.com/corpseofapoet">
