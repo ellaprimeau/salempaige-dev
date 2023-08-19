@@ -38,10 +38,28 @@
   	input::placeholder {
   		color: #a4b6a7;
   	}
+
+  	@media screen and (min-width: 768px) {
+	  	body {
+	  		background-image: url('content/home/portrait.png');
+	  		background-size: 900px;
+	  		background-position: 50% 0%;
+	  		background-repeat: no-repeat;
+	  	}
+	  }
+
+	  @media screen and (max-width: 768px) {
+	  	body {
+	  		background-image: url('content/home/portrait.png');
+	  		background-size: 100%;
+	  		background-position: 50% 0%;
+	  		background-repeat: no-repeat;
+	  	} 	
+	  }
 	</style>
 
 	<body>
-		<div class="sticky-top bg-body-bg">
+		<div class="bg-body-bg" style="background-image: url('content/home/portrait.png');background-size: 900px; background-position: 50% 0%; background-repeat: no-repeat;">
 			<nav class="navbar navbar-expand-lg navbar-dark-custom">
 			  <div class="container-fluid">
 			  	<a class="navbar-brand" href="#"></a>
@@ -49,7 +67,6 @@
 			  		.navbar-toggler:active,
 			  		.navbar-toggler:focus,
 			  		.navbar-toggler-icon:focus {
-/*			  			box-shadow: none;*/
 			  		}
 			  	</style>
 			    <button class="navbar-toggler border border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,7 +97,7 @@
 			  </div>
 			</nav>
 
-			<div class="col-xxl-4 col-md-10 mx-auto">
+			<div class="col-xxxl-2 col-xxl-4 col-md-10 mx-auto">
 				<div class="bg-primary my-2 mx-auto" style="padding: .1rem;"></div>
 			</div>
 		</div>
@@ -108,19 +125,13 @@
 			});
 		</script>
 
-		<div class="col-xs-12 d-none d-lg-block" style="height:50px;"></div>
-
-		<div class="container-fluid col-lg-12 mt-5 mx-auto px-4 mx-0 text-center" id="scrollTrigger">
-			<div class="container-fluid mx-0 px-0 d-xxl-none d-flex">
-				<img src="content/home/image0.jpeg" class="img-fluid w-100" style="border-radius: 7.5rem;"></img>
-			</div>
-			<div class="container-fluid col-xxxl-5 col-8 mx-auto px-0 d-none d-xxl-flex">
-				<img src="content/home/image0.jpeg" class="img-fluid w-100" style="border-radius: 7.5rem;"></img>
-			</div>
-		</div>
+		<div class="col-xs-12 d-none d-lg-block" style="height:600px;"></div>
+		<div class="col-xs-12 d-none d-md-block d-lg-none" style="height:675px;"></div>
+		<div class="col-xs-12 d-none d-sm-block d-md-none" style="height:60vw;"></div>
+		<div class="col-xs-12 d-block d-sm-none" style="height:40vw;"></div>
 
 		<div class="container-fluid mt-5">
-			<div class="col-xxxl-4 col-xxl-6 col-lg-10 py-5 px-5 mx-auto bg-primary">
+			<div class="col-xxxl-4 col-xxl-5 col-md-10 py-5 px-sm-5 mx-auto bg-primary" style="opacity: .85;">
 				<h5 class="noticia-font text-black mx-5">
 					<i>In the world of Salem Paige, poetry becomes a vehicle for transformation, a medium through which we can uncover the hidden layers of our own existence and find solace in the shared narratives of the human experience.</i>
 				</h5>
@@ -131,16 +142,16 @@
 		</div>
 
 		<div class="container-fluid my-5" style="overflow: auto;">
-			<div class="col-xxxl-4 col-xxl-6 col-lg-10 mx-auto my-5">
+			<div class="col-xxxl-4 col-xxl-7 col-xl-8 col-lg-10 mx-auto my-5">
 			  <div class="square">
 			    <div class="text-sm-start text-center">
-			      <img class="d-none d-sm-flex img-fluid mx-5 mb-5" src="content/books/cover.jpg" style="float: left; max-width: 20rem;">
+			      <img class="d-none d-sm-flex img-fluid mx-5 mb-5" src="content/books/cover.jpg" style="float: left; max-width: 18rem;">
 			      <img class="d-inline d-sm-none img-fluid mb-5" src="content/books/cover.jpg" style="max-width: 15rem;">
 			    </div>
 			    
 			    <div class="noticia-font">
 			    	<h1 class="display-6 mb-4"><a class="text-black" href="https://www.sundaymorningsattheriver.com/blog/unveiling-the-third-self-an-encounter-with-salem-paige">THE THIRD SELF</a></h1> 
-  					<p style="font-size: 0.9rem">
+  					<p style="font-size: 15px">
 							In the captivating realm of poetry, we find ourselves immersed in a conversation with Salem Paige, a remarkable transgender poet whose introspective works have captivated readers worldwide. With their latest book, "The Third Self," Paige takes us on a profound journey of self-discovery and creative exploration.
 							<br><br>
 							Residing on Algonquin Anishinaabe territory, Salem Paige graciously invites us into their creative universe. Their poetic voice, filled with sublime imagery and existential introspection, sets the stage for a conversation that promises to be both enlightening and transformative.
