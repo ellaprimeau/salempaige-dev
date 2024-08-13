@@ -1,6 +1,6 @@
 {
   "cleanUrls": true,
   "rewrites": [
-    {"source": "/:match", "destination": "/salDev/:match"}
+    {"source": "/salDev/:match", "destination": "https://salempaige-dev.vercel.app/:match"}
   ]
 }
